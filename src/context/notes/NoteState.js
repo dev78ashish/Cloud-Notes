@@ -51,6 +51,7 @@ const NoteState = (props) => {
       return note._id !== id;
     });
     setNotes(newNotes);
+    props.showAlert("Deleted Successfully", "success");
   };
 
   //Edit a note

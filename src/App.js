@@ -25,7 +25,7 @@ function App() {
 
   return (
     <>
-      <NoteState>
+      <NoteState showAlert={showAlert}>
         <Router>
           <Navbar />
           <Alert alert={alert}/>
