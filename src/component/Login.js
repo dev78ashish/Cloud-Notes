@@ -24,7 +24,7 @@ const Login = (props) => {
         // document.body.style.backgroundColor = "#f3f4f8";
       }
       navigate("/");
-      props.showAlert("Loged in Successfully ", "success");
+      props.showAlert("Logged in Successfully ", "success");
     } else {
       props.showAlert("invalid email or password", "danger");
     }

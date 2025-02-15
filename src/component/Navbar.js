@@ -81,7 +81,7 @@ const Navbar = () => {
                 onClick={handleLogout}
                 className="btn btn-outline-primary "
               >
-                logout
+                Logout
               </button>
             )}
           </div>
