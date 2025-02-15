@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import DemoLoginButton from "./DemoLoginButton";
 import img from "./slider.png";
 
-const Landingpage = () => {
+const Landingpage = (props) => {
   return (
     <>
       <div className="header">
@@ -30,7 +30,7 @@ const Landingpage = () => {
               <Link className="btn btn-outline-primary" to="/signup" role="button">
                 Sign-Up
               </Link>
-              <DemoLoginButton />
+              <DemoLoginButton showAlert={props.showAlert}/>
             </div>
           </div>
           <div className="content-right">
