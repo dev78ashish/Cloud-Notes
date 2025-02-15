@@ -1,11 +1,12 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
-const About = () => {
+const About = (props) => {
   const navigate = useNavigate();
   const handleLogout = () => {
     localStorage.removeItem("token");
     localStorage.setItem("land", "anjul");
     navigate("/landingpage");
+    props.showAlert("Logout Successful", "success");
   };
   let location = useLocation();
   const handleClick = () => {
@@ -39,9 +40,12 @@ const About = () => {
               </Link>
             </form>
           ) : (
-            <button onClick={handleLogout} className="btn btn-outline-light ">
-              logout
-            </button>
+            <button
+                onClick={handleLogout}
+                className="btn btn-outline-primary "
+              >
+                Logout
+              </button>
           )}
         </div>
       </div>

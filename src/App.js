@@ -27,12 +27,12 @@ function App() {
     <>
       <NoteState showAlert={showAlert}>
         <Router>
-          <Navbar />
+          <Navbar showAlert={showAlert} />
           <Alert alert={alert}/>
           <div className="">
             <Routes>
               <Route exact path="/" element={<Home showAlert={showAlert} />} />
-              <Route exact path="/about" element={<About />} />
+              <Route exact path="/about" element={<About showAlert={showAlert} />} />
               <Route exact path="/login" element={<Login showAlert={showAlert} />} />
               <Route exact path="/signup" element={<SignUp showAlert={showAlert} />} />
               <Route exact path="/landingpage" element={<Landingpage showAlert={showAlert} />} />
