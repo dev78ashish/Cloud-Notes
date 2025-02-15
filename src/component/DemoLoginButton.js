@@ -27,9 +27,9 @@ const DemoLoginButton = (props) => {
     if (json.success) {
       localStorage.setItem("token", json.authToken);
       navigate("/");
-    //   props.showAlert("Logged in Successfully with Demo Account", "success");
+      props.showAlert("Logged in Successfully with Demo Account", "success");
     } else {
-    //   props.showAlert("Demo login failed", "danger");
+      props.showAlert("Demo login failed", "danger");
     }
   };
 
